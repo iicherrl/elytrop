@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Syndrop News Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .c_box {
+        textarea {
+          width: 60%;
+          height: 250px;
+          box-sizing: border-box;
+          border: 1px solid #ff9943;
+          border-radius: 4px;
+          background-color: #f8f8f8;
+          resize: none;
+        }
+      }
+    </style>
+    <script>
+        function response() {
+          let c_resp = document.getElementById("validate").value;
+          let c1_ans = "wheN The skY FEll";
+          if (c_resp == c1_ans) {
+            window.location.href = "chapter1.html";
+          } else {
+            alert("We've sent your message to the void. No telling if it'll get back now.");
+        }
+    }
+    </script>
+  </head>
+  
+  <body>
+    <div class="site">
+      <header class="site-header">
+        <div class="disclaimer">
+          <small>Disclaimer: This is an archive of transcripted news articles. Some information may be inaccurate.</small>
+        </div>
+        <div class="header">
+          <h1 style="color: #ff9943;"> The Syndrop News Project </h1>
+        </div>
+        <div class="topnav">
+          <a href="homePage.html"> Home </a>
+          <a href="archive.html"> Full Archive </a>
+          <a href="map.html"> View Map </a>
+          <a href="about.html"> About Us </a>
+          <a href="contact.html" style="color: #ff9943;"> Contact Us </a>
+        </div>
+      </header>
+      <main class="site-main"></main>
+        <div class="site_content">
+          <br>
+          <h1 style="color: #ff9943;"> Contact Us </h1>
+          <p> We (I) don't know why you'd want (need) to contact us. You have so many better things you could do.</p>
+          <p> Just consider giving us your attention (help). It's all we have, anyways, ever since you burnt the office down.</p>
+          <p> After the war. </p>
+          <p> After the Ascension. </p>
+          <p> After the Apocalypse.</p>
+          <p>We don't have an official email, but you can write your complaints and comments in the box below. </p>
+          <p> It won't do anything, but it'll be nice to get it out before the moon takes us all.</p>
+          <br><br>
+          
+        <form class="c_box" id="c_box">
+            <textarea id="validate" placeholder="Start typing here."></textarea>
+            <br>
+            <button type="button" onclick="response()">Submit</button>
+            <br><br>
+        </form>
+        </div>
+      <footer class="site-footer">
+        <div class="site-footer">
+            <br>
+            <small>What do websites put down here anyways? I can't say this is copyrighted, I only lie recreationally. I mean we.</small>
+            <br> <br>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

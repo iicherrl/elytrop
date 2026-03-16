@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Syndrop News Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .news_list {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        text-align: center;
+        border-bottom: 1px solid #ff9943;
+        border-top: 1px solid #ff9943;
+      }
+      .news_link {
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+      a:link {
+        text-decoration: none;
+      }
+      a:visited {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      a:active {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="site">
+      <header class="site-header">
+        <div class="disclaimer">
+          <small>Disclaimer: This is an archive of transcripted news articles. Some information may be inaccurate.</small>
+        </div>
+        <div class="header">
+          <h1 style="color: #ff9943;"> The Syndrop News Project </h1>
+        </div>
+        <div class="topnav">
+          <a href="homePage.html"> Home </a>
+          <a href="archive.html" style="color: #ff9943;"> Full Archive </a>
+          <a href="map.html"> View Map </a>
+          <a href="about.html"> About Us </a>
+          <a href="contact.html"> Contact Us </a>
+        </div>
+      </header>
+      <main class="site-main">
+        <div class="news_content">
+          <br>
+          <p>This is sorted earliest to latest by entry. It's the easiest way we could do it.</p>
+          <div class="news_list">
+            <div>image</div>
+            <div class="news_link" href="article1.html">
+              <h3><a href="article1.html" style="color: #ff9943;">The Mystery of Piran's Statue: Solved</a></h3>
+              <p>Article 47, Transcribed by K.B.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="site-footer">
+        <div class="site-footer">
+            <br>
+            <small>What do websites put down here anyways? I can't say this is copyrighted, I only lie recreationally. I mean we.</small>
+            <br> <br>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

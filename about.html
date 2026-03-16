@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Syndrop News Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .author {
+        background: none;
+        transition-duration: 0.4s;
+        color: #ff9943;
+        box-shadow: none;
+        border-width: 1px;
+        border-color: #ff9943;
+        border-style: solid;
+        font-family: Helvetica, Arial, sans-serif;
+        margin-bottom: 15px;
+        font-size: small;
+      }
+      .author:hover {
+        background-color: #ff9943;
+        color: black;
+      }
+      .author:disabled {
+        pointer-events: none;
+        border: none;
+      }
+    </style>
+    <script>
+      function backText() {
+        document.getElementById("line1").innerHTML = "Welcome to Syndrop News!";
+        document.getElementById("line2").innerHTML = "This project is my convoluted way of storing Kiraza and Criella's story, when Google Docs and notebooks already exist.";
+        document.getElementById("line3").innerHTML = "Don't do this. I've spent so much time screaming at my computer. It's not worth it.";
+        document.getElementById("line4").innerHTML = "I convinced myself to start this in June of 2025 for Pride but also to 'review for AP:CSA next year.' it was a STUPID IDEA";
+        document.getElementById("line5").innerHTML = "do as i say not as i do!!!!! you can find me over on instagram (@ii.cherrl) and on tumblr (iicherrl)";
+        document.getElementById("line6").innerText = "";
+        document.getElementById("author").innerHTML = "refresh to restart!";
+        document.getElementById("author").disabled = true;
+      }
+    </script>
+  </head>
+  
+  <body>
+    <div class="site">
+      <header class="site-header">
+        <div class="disclaimer">
+          <small>Disclaimer: This is an archive of transcripted news articles. Some information may be inaccurate.</small>
+        </div>
+        <div class="header">
+          <h1 style="color: #ff9943;"> The Syndrop News Project </h1>
+        </div>
+        <div class="topnav">
+          <a href="homePage.html"> Home </a>
+          <a href="archive.html"> Full Archive </a>
+          <a href="map.html"> View Map </a>
+          <a href="about.html" style="color: #ff9943;"> About Us </a>
+          <a href="contact.html"> Contact Us </a>
+        </div>
+      </header>
+      <div class="site-main">
+        <div class="site_content">
+          <h1 style="color: #ff9943;">About Us</h1>
+          <p id="line1">Why do <i>you</i> want to know more about us?</p>
+          <p id="line2">In any case, we're based in The Slums in Elytrop. Really nice place, trust us.</p>
+          <p id="line3">We buried these newspapers long ago across two towns, and we're still trying to find them all.</p>
+          <p id="line4">Back when Syndrop and The Slums were still separated. We're not very original, so we've taken its name.</p>
+          <p id="line5">Ever since Syndrop News became obscure, we've been hard at work to reinstate it. Knowledge being preserved is cool, and history repeating itself isn't, after all.</p>
+          <p id="line6">Forgive us if the transcriptions have issues. It's hard to preserve papers that have been cried over and, well, buried.</p>
+          <br> <br>
+        </div>
+      </div>
+      <footer class="site-footer">
+        <div class="site-footer">
+            <br>
+            <button class="author" onclick="backText()" id="author">See what the author really thinks.</button>
+            <br>
+            <small>What do websites put down here anyways? I can't say this is copyrighted, I only lie recreationally. I mean we.</small>
+            <br> <br>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
